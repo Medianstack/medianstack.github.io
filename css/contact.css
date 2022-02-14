@@ -1,0 +1,1064 @@
+html {
+  background-color: #011F27;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  width: 100%;
+  background-color: #011F27;
+  display: flex;
+  border-bottom: 1px solid white;
+}
+
+.logodiv {
+  width: 200px;
+
+}
+
+
+.logolink {
+  width: 210px;
+  height: 116px;
+  margin-left: 28px;
+}
+
+
+.mainlogo {
+  width: 200px;
+  margin-left: 60px;
+}
+
+.menudiv {
+  width: 100%;
+  height: 100px;
+}
+
+.menudiv li {
+  list-style: none;
+}
+
+
+
+
+
+
+.menudiv li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-family: 'Staatliches', cursive;
+  float: left;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.frstmn {
+  padding-left: 100px;
+}
+
+
+
+/* MENU FOR PHONE SCREEN */
+
+#menu {
+  width: 45px;
+  height: 40px;
+  cursor: pointer;
+  right: 50px;
+  top: 45px;
+  position: absolute;
+}
+
+.bar {
+  height: 8px;
+  width: 100%;
+  background-color: white;
+  display: block;
+  border-radius: 2px;
+  transition: 0.3s ease;
+
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav li a {
+  font-size: 45px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Staatliches', cursive;
+}
+
+.nav li {
+  list-style: none;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  border: 1px white solid;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.nav {
+  padding: 0;
+  padding-top: 150px;
+  display: none;
+}
+
+.change-nav {
+  animation: goodanim 0.3s ease;
+}
+
+@keyframes goodanim {
+  0% {
+    opacity: 0;
+
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu-bg {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+
+.change-menu-bar {
+  width: 100%;
+  height: 80%;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  background: radial-gradient(#ABBF0E, #ABBF0E);
+  transition: 0.3s ease;
+}
+
+#menu-bar {
+  z-index: 2;
+  display: none;
+}
+
+.change-bg {
+  width: 100%;
+  height: 100%;
+
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change {
+  display: block;
+}
+
+
+
+/* For 2k Screen  */
+
+@media screen and (min-width: 2060px) {
+
+  .mainlogo {
+    width: 225px;
+  }
+
+
+  .menudiv li a {
+    font-size: 32px;
+    margin: 20px;
+    margin-top: 50px;
+  }
+
+  .menudiv {
+    width: 100%;
+
+    margin-left: 20px;
+  }
+
+
+
+}
+
+
+
+/* FOR LAPTOP SCREEN */
+
+@media screen and (min-width: 1320px) and (max-width: 1750px) {
+
+  .menudiv {
+    width: 100%;
+    height: 100px;
+  }
+
+}
+
+
+
+
+/* For smaller Laptop Size */
+
+
+@media screen and (min-width: 1001px) and (max-width: 1319px) {
+
+  .mainlogo {
+    width: 175px;
+    margin-top: 3px;
+    margin-left: 28px;
+  }
+
+  .menudiv {
+    width: 100%;
+    height: 100px;
+    margin-left: -30px;
+  }
+
+  .menudiv li a {
+    font-size: 28px;
+    margin: 20px;
+    margin-top: 40px;
+  }
+
+
+}
+
+
+
+/* FOR TABLET SCREEN */
+
+
+@media screen and (max-width: 1000px) {
+  .mainlogo {
+    width: 175px;
+    margin-top: 3px;
+    margin-left: 10px;
+  }
+
+  #menu-bar {
+    display: block;
+  }
+
+  .menudiv {
+    display: none;
+  }
+
+
+}
+
+/* FOR PHONE SCREEN  */
+
+@media screen and (max-width: 500px) {
+  .mainlogo {
+    width: 140px;
+    margin-left: 0px;
+  }
+
+  #menu-bar {
+    display: block;
+  }
+
+  .menudiv {
+    display: none;
+  }
+
+
+}
+
+
+
+main {
+  background-color: #011F27;
+  width: 100%;
+  height: 800px;
+}
+
+.contactContainer {
+  width: 100%;
+  height: 800px;
+  padding-top: 40px;
+}
+
+.contUs {
+  text-align: center;
+  font-size: 50px;
+  color: #ABBF0E;
+  font-family: 'Staatliches', cursive;
+}
+
+.contactInfo {
+  width: 100%;
+  height: 697px;
+  display: flex;
+}
+
+.firstContact {
+  width: 30%;
+  height: 697px;
+  padding: 10px 10% 0 10%;
+}
+
+
+.firstContact form {
+  width: 100%;
+  height: 650px;
+}
+
+.firstContact input {
+  font-size: 16px;
+  width: 380px;
+  height: 40px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border: none;
+  font-family: monospace;
+  color: #444444;
+}
+
+.firstContact input[type=submit] {
+  width: 400px;
+  height: 50px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+
+.firstContact input:focus {
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.7);
+  outline: 0 none;
+}
+
+.firstContact p {
+  font-size: 25px;
+  color: #ABBF0E;
+  margin-left: 10px;
+  font-family: 'Staatliches', cursive;
+}
+
+.firstContact textarea {
+  width: 360px;
+  height: 120px;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-size: 16px;
+  max-width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+  font-family: monospace;
+  color: #444444;
+
+}
+
+.firstContact textarea:focus {
+  border-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 255, 255, 0.9);
+  outline: 0 none;
+}
+
+
+.secContact {
+  width: 50%;
+  height: 697px;
+}
+
+.secContact1 {
+  width: 80%;
+  height: 20%;
+  font-family: 'Staatliches', cursive;
+  margin-top: 30px;
+}
+
+.secContact1 p {
+  margin-top: 20px;
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+  color: #ABBF0E;
+}
+
+.secContact2 {
+  width: 80%;
+  height: 25%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-top: 30px;
+}
+
+.secContact2 p {
+  margin-top: 20px;
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+  color: #ABBF0E;
+}
+
+.secContact3 {
+  width: 80%;
+  height: 20%;
+}
+
+.secContact3 p {
+  margin-top: 20px;
+  font-family: 'Staatliches', cursive;
+  font-size: 25px;
+  color: #ABBF0E;
+}
+
+.secContact3 i {
+  margin-top: 20px;
+  font-size: 40px;
+}
+
+
+.media-icon-1 {
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 0px;
+  vertical-align: middle;
+}
+
+
+.media-icon-2 {
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 30px;
+  vertical-align: middle;
+
+}
+
+
+.media-icon-3 {
+  color: #ffffff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 0px;
+  vertical-align: middle;
+
+}
+
+
+
+/* Laptop Size */
+
+@media screen and (min-width: 1320px) and (max-width: 1750px) {}
+
+
+/* Smaller Laptop Size */
+
+@media screen and (min-width: 1001px) and (max-width: 1319px) {
+
+  .firstContact {
+    width: 40%;
+  }
+
+  .secContact {
+    width: 40%;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 880px) and (max-width: 1000px) {
+  .contUs {
+    font-size: 45px;
+  }
+
+  .firstContact {
+    width: 45%;
+  }
+
+  .firstContact input {
+    width: 340px;
+  }
+
+  .firstContact textarea {
+    width: 320px;
+  }
+
+  .firstContact input[type=submit] {
+    width: 360px;
+  }
+
+  .secContact {
+    width: 35%;
+  }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 879px) {
+
+  .contUs {
+    font-size: 32px;
+  }
+
+  .firstContact {
+    width: 45%;
+    padding-left: 5%;
+  }
+
+  .firstContact p {
+    font-size: 20px;
+  }
+
+  .firstContact input {
+    width: 260px;
+    height: 30px;
+  }
+
+  .firstContact textarea {
+    width: 240px;
+
+  }
+
+  .firstContact input[type=submit] {
+    width: 280px;
+    height: 30px;
+  }
+
+  .secContact {
+    width: 35%;
+  }
+
+  .secContact1 {
+    margin-top: 0px;
+  }
+
+
+  .secContact1 p {
+    font-size: 22px;
+  }
+
+  .secContact2 p {
+    font-size: 22px;
+  }
+
+  .secContact3 p {
+    font-size: 22px;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 599px) {
+  main {
+    height: 1207px;
+  }
+
+  #menu {
+    width: 40px;
+    top: 45px;
+  }
+
+  .bar {
+    height: 6px;
+  }
+
+  .contactInfo {
+    display: block;
+    height: 1197px;
+  }
+
+  .contactContainer {
+    height: 1207px;
+  }
+
+  .contUs {
+    font-size: 32px;
+  }
+
+  .firstContact {
+    width: 60%;
+    height: 500px;
+    padding: 10px 0 10px 0;
+    margin: auto auto;
+
+  }
+
+  .firstContact form {
+    width: 100%;
+    height: 500px;
+
+  }
+
+  .firstContact p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .firstContact input {
+    width: calc(100% - 20px);
+    height: 30px;
+
+  }
+
+  .firstContact textarea {
+    width: calc(100% - 40px);
+
+  }
+
+  .firstContact input[type=submit] {
+    width: 100%;
+    height: 30px;
+  }
+
+  .secContact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .secContact1 {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .secContact2 {
+    width: 100%;
+  }
+
+  .secContact3 {
+    width: 100%;
+  }
+
+  .secContact1 p {
+    font-size: 22px;
+  }
+
+  .secContact2 p {
+    font-size: 22px;
+  }
+
+  .secContact3 p {
+    font-size: 22px;
+  }
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+  #menu {
+    top: 35px;
+    right: 40px;
+  }
+
+  .bar {
+    height: 6px;
+  }
+
+  .firstContact {
+    width: 70%;
+  }
+
+}
+
+
+@media screen and (max-width: 425px) {
+
+  #menu {
+    top: 35px;
+    right: 30px;
+  }
+
+  .nav li a {
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+
+  .firstContact {
+    width: 80%;
+  }
+
+}
+
+
+@media screen and (max-width: 360px) {
+  #menu {
+    top: 35px;
+    right: 25px;
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .mainlogo {
+    margin-left: -10px;
+  }
+
+  #menu {
+    top: 35px;
+    right: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  bottom: 0;
+
+}
+
+.footerlogo {
+  margin-top: 0;
+  padding-top: 0;
+  width: 220px;
+}
+
+.footer-distributed {
+  background-color: #011F27;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 0px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+.footer-left {
+  padding-bottom: 40px;
+}
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #5383d3;
+}
+
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-center {
+  padding-top: 35px;
+}
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #ABBF0E;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+
+.footer-distributed .footer-center p a {
+  color: #5383d3;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+.footer-distributed .footer-company-about span a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 75px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #ABBF0E;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+
+.footer-right {
+  padding-top: 35px;
+}
+
+
+
+@media screen and (min-width: 881px) and (max-width: 1050px) {
+  .footerlogo {
+    width: 200px;
+  }
+
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 880px) {
+  .footerlogo {
+    width: 245px;
+  }
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+  }
+
+
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+}
+
+
+
+@media screen and (min-width: 400px) and (max-width: 599px) {
+  .footerlogo {
+    width: 225px;
+  }
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+  }
+
+
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 399px) {
+  .footerlogo {
+    width: 180px;
+  }
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+
+    text-align: center;
+  }
+
+
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 299px) {
+  .footerlogo {
+    width: 160px;
+  }
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-distributed {
+    padding: 0;
+  }
+
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+}
